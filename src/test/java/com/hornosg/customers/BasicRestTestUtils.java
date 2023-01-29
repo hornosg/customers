@@ -24,13 +24,8 @@ public class BasicRestTestUtils  extends BasicTestUtils
     @LocalServerPort
     private int serverPort;
 
-//    @BeforeEach
-//    void setUp() {
-//
-//    }
-
     private String createURLWithPort(String uri) {
-        return "http://localhost:" + serverPort + uri;
+        return "http://localhost:" + serverPort + "/hornosg/" + uri;
     }
 
     @Test
